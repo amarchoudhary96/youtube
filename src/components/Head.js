@@ -47,7 +47,7 @@ const Head = () => {
   };
 
   return (
-    <div className="flex flex-row px-5 py-2 mx-2 items-center justify-between sm:w-full w-[620px] fixed top-0 left-0 bg-white z-50">
+    <div className="flex flex-row px-5 py-2  items-center justify-between sm:w-full  fixed top-0 left-0 bg-white z-50">
       <div className="flex col-span-1 items-center">
         <img
           src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png"
@@ -121,7 +121,7 @@ const Head = () => {
         )}
       </div>
 
-      <div className="col-span-1">
+      <div className="col-span-1 hidden sm:inline-block">
         <img
           src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png"
           alt="profile"

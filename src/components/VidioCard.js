@@ -28,7 +28,7 @@ const VidioCard = ({ info }) => {
   }
 
   return (
-    <div className={`sm:p-2 my-2 ${isMenuOpen ? "sm:w-[350px]" : "sm:w-[400px] ml-8"} cursor-pointer `}>
+    <div className={`sm:p-2 m-2 ${isMenuOpen ? "sm:w-[350px]" : "sm:w-[400px] ml-8"} cursor-pointer `}>
       <img className="rounded-lg w-full" src={thumbnails.medium.url} alt="thumbnail" />
       <ul>
       <li className="font-bold py-2">{title.slice(0, 40)}</li>

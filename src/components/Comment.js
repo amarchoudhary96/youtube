@@ -29,7 +29,7 @@ const Comment = ({ id }) => {
   }, [videoId]);
 
   return (
-    <div className="bg-white p-4 rounded-md w-[800px] sm:w-[400px] ">
+    <div className="bg-white p-4 rounded-md w-full">
       {comments.map((comment, index) => (
         <div key={index} className="mb-4">
           <div className="flex items-center space-x-4">

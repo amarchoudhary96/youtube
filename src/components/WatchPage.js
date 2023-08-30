@@ -25,11 +25,11 @@ const WatchPage = () => {
   }, []);
 
   return (
-    <div className="flex overflow-x-hidden ">
-      <div className="sm:px-6 px-2">
+    <div className="flex justify-center  ">
+      <div className="sm:px-6 px-2 w-full flex flex-col items-center ">
         {searchParams.get("v") && (
           <iframe
-            className="w-[340px] h-[250px] sm:w-[800px] sm:h-[500px]"
+            className="w-[350px] h-[250px] sm:w-[800px] sm:h-[500px]"
             // width="800"
             // height="500"
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
@@ -41,14 +41,14 @@ const WatchPage = () => {
         )}
 
         {Info && Info.Info && Info.Info.snippet && (
-          <div className="mt-4 flex flex-col gap-4 sm:w-[800px] w-[340px]">
+          <div className="mt-4 flex flex-col gap-4 w-full">
             {Info.Info.snippet.title && (
-              <h1 className="text-2xl font-semibold ">
+              <h1 className="text-2xl font-semibold px-2">
                 {Info.Info.snippet.title}
               </h1>
             )}
 
-            <div className="flex justify-between">
+            <div className="flex justify-between px-2">
               <div className="flex items-center mt-1 gap-4">
                 <img
                   src={Info.Info.snippet.thumbnails.default.url}
@@ -86,7 +86,7 @@ const WatchPage = () => {
                   {formatViewsCount(Info.Info.statistics.viewCount)} views
                 </p>
 
-                <p className="text-gray-800 text-sm font-medium">
+                <p className="text-gray-800 text-sm font-medium w-full overflow-hidden px-3">
                   {showFullDescription
                     ? Info.Info.snippet.description
                     : Info.Info.snippet.description.slice(0, 300)}

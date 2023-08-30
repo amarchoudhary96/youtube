@@ -34,11 +34,9 @@ const VidioContainer = () => {
   };
 
   return (
-    <div
-      className={`grid sm:grid-cols-3 grid-cols-1 justify-center   ${
-        isMenuOpen ? "sm:ml-[250px]" : "sm:ml-[50px]"
-      }`}
-    >
+    <div className={`grid sm:grid-cols-3 grid-cols-1 justify-center items-center ${
+      isMenuOpen ? "sm:ml-[250px]" : "sm:ml-[50px]"
+    }`}>
       {!updatecategory
         ? vidios?.map((vidio) => (
             <Link
